@@ -4,7 +4,7 @@ RUN apt update && apt install -y default-mysql-client
 
 WORKDIR /app
 COPY ./Gemfile /app/Gemfile
-# COPY ./Gemfile.lock /app/Gemfile.lock
+COPY ./Gemfile.lock /app/Gemfile.lock
 
 RUN bundle install
 
