@@ -2,6 +2,8 @@
 
 # Mark the database schema as having been generated.
 postgresqlapp/db/schema.rb linguist-generated
+mysqlapp/db/schema.rb linguist-generated
 
 # Mark any vendored files as having been vendored.
 postgresqlapp/vendor/* linguist-vendored
+mysqlapp/vendor/* linguist-vendored

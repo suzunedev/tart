@@ -1,0 +1,18 @@
+services:
+  db:
+    image: mysql:8.0
+    volumes:
+      - ./tmp/db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${APP_DATABASE_PASSWORD}
+  app:
+    build: .
+    command: bash -c "rm -rf tmp/pids/server.pid && bin/rails server -b 0.0.0.0"
+    ports:
+      - 3000:3000
+    volumes:
+      - .:/app
+    environment:
+      APP_DATABASE_PASSWORD: ${APP_DATABASE_PASSWORD}
+    depends_on:
+      - db

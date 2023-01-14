@@ -6,20 +6,30 @@
 
 # Ignore bundler config.
 postgresqlapp/.bundle
+mysqlapp/.bundle
 
 # Ignore all logfiles and tempfiles.
 postgresqlapp/log/*
 postgresqlapp/tmp/*
 !postgresqlapp/log/.keep
 !postgresqlapp/tmp/.keep
+mysqlapp/log/*
+mysqlapp/tmp/*
+!mysqlapp/log/.keep
+!mysqlapp/tmp/.keep
 
 # Ignore uploaded files in development.
 postgresqlapp/storage/*
 !postgresqlapp/storage/.keep
+mysqlapp/storage/*
+!mysqlapp/storage/.keep
 
 postgresqlapp/public/assets
+mysqlapp/public/assets
 
 # Ignore master key for decrypting credentials and more.
 postgresqlapp/config/master.key
+mysqlapp/config/master.key
 
 postgresqlapp/.env
+mysqlapp/.env
