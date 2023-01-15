@@ -14,11 +14,16 @@
 % docker compose build
 % docker compose run --rm app rails db:create
 % docker compose run --rm app rails db:migrate
-% docker compose up -d
 ```
 
 起動する。
 
 ```zsh
 % docker compose up -d
+```
+
+破棄する。
+
+```zsh
+% docker compose down
 ```
