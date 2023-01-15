@@ -43,3 +43,7 @@ sqliteapp/config/master.key
 postgresqlapp/.env
 mysqlapp/.env
 sqliteapp/.env
+
+# Ignore the default SQLite database.
+sqliteapp/db/*.sqlite3
+sqliteapp/db/*.sqlite3-*

@@ -1,24 +1,24 @@
-# README
+# sqliteapp
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## 環境構築
 
-Things you may want to cover:
+環境設定ファイルをコピーして編集する。
 
-* Ruby version
+```zsh
+% cp .env.sample .env
+```
 
-* System dependencies
+セットアップする。
 
-* Configuration
+```zsh
+% docker compose build
+% docker compose run --rm app rails db:create
+% docker compose run --rm app rails db:migrate
+% docker compose up -d
+```
 
-* Database creation
+起動する。
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```zsh
+% docker compose up -d
+```
